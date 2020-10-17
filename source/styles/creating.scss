@@ -2,6 +2,22 @@
     position: relative;
     padding: 150px;
 
+    @include media-breakpoint-down(lg) {
+        padding: 100px;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 80px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding: 60px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        padding: 30px;
+    }
+
     &:after {
         content: "";
         position: absolute;
@@ -28,10 +44,3 @@
         }
     }
 }
-
-@media (max-width: 500px) {
-    .creating {
-        padding: 50px;
-    }
-}
-

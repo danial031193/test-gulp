@@ -4,6 +4,10 @@
     width: 100%;
     min-height: 100vh;
 
+    @include media-breakpoint-only(md) {
+        display: none;
+    }
+
     &__wrapper {
         width: 100%;
         display: flex;
@@ -53,11 +57,5 @@
         p {
             color: #ffffff;
         }
-    }
-}
-
-@media (max-width: 500px) {
-    .header {
-        display: none;
     }
 }
