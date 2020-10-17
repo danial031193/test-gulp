@@ -1,0 +1,28 @@
+
+.test {
+    position: relative;
+    padding: 150px;
+
+    .container {
+        background: antiquewhite;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    &__item {
+        width: 33.333%;
+        height: 150px;
+        padding: 15px;
+    }
+
+    &__bcg {
+        background: #4985FF;
+        width: 100%;
+        height: 100%;
+    }
+}

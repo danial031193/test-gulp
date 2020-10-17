@@ -1,0 +1,37 @@
+.creating {
+    position: relative;
+    padding: 150px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 50%;
+        z-index: -1;
+        background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        width: 15%;
+        height: 150px;
+        background: #4985FF;
+
+        + .creating__item {
+            margin-left: 40px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .creating {
+        padding: 50px;
+    }
+}
+
